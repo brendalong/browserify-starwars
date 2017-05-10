@@ -17,9 +17,7 @@ let setEvil = function(who){
 	console.log("keyplayers", keyplayers);
 };
 
-module.exports = {
-	getEvil, setEvil
-};
+module.exports = {getEvil, setEvil};
 
 
 

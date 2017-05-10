@@ -1,6 +1,6 @@
 "use strict";
 
-console.log("Hello Browserify JS");
+console.log("Hello Browserify JS"); 
 
 let test = require('./test.js');
 console.log("test", test);
@@ -14,7 +14,7 @@ console.log("adding", MathModule.adding(3,5));
 
 ///// real stuff
 
-// let $ = require('jquery'),
+// let $ = require('lib/node_modules/jquery/dist/jquery');
 let lightside = require('./light'),
 darkside = require('./dark');
 

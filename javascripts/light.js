@@ -1,7 +1,7 @@
 "use strict";
 console.log("hello light side");
 
-let dark = require("./dark.js");
+let darkside = require("./dark.js");
 
 
 var location = "D'Qar";
@@ -41,14 +41,14 @@ let removeJedi = function(who, name){
 	//if dead, no new name
 	if (name){
 		//going to dark side results in new name
-		dark.setEvil(name);
+		darkside.setEvil(name);
 	}
 };
 
 let getLocation = function(whoAsks){
 	console.log("whoAsks", whoAsks);
 	var tell = true;
-	let evilPlayers = dark.getEvil();
+	let evilPlayers = darkside.getEvil();
 	evilPlayers.forEach(function(item) {
 		if (item === whoAsks){
 			tell = false;
@@ -65,8 +65,6 @@ let getLocation = function(whoAsks){
 	}
 };
 
-module.exports = {
-	addJedi, getJedi, getPlayer, setPlayer, removeJedi, getLocation
-};
+module.exports = {addJedi, getJedi, getPlayer, setPlayer, removeJedi, getLocation};
 
 
