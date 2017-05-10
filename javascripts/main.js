@@ -18,7 +18,10 @@ console.log("adding", MathModule.adding(3,5));
 let lightside = require('./light'),
 darkside = require('./dark');
 
-
+/// Option 2
+/// Add all methods to the StarwarsModule
+// let StarwarsModule = require('./starwars');
+// console.log("StarwarsModule", StarwarsModule);
 
 
 // dom stuff
